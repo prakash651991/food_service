@@ -1,0 +1,34 @@
+Saapadu Box - Taste of Home. In Every Bite.
+
+Android app
+
+react, superbase, flutter, razorpay.
+
+* all the credential shgould be in .env
+
+create a Android app for food service, one single login and signup page, where custer and admin can login and signup.
+create default admin user for the first time while setup the app.
+
+Business model: Enterpriose level food service app, where admin deliver the home made food to the customer place. admin will deliver the food at the morning and night.
+morning - Breakfast and Lunch
+Evening - Dinner
+based on the subscription model only - Breakfast, Lunch, Dinner (customer can select any of the combinations), with monthly and yearly.
+Monthly: 30 Days
+Yearly: 365 days
+Pause option: customer should able to pause any of the meal for certain period of time. example : if customer opt for the breakfast and lunch for monthly plan then if customer decided to pause only the breakfast for 2 days then  expiry date for the breakfast should be added 2 days. also each meal should have seperate expiry date to avoid confusions also overall expiry date should be available.
+Renewal Logic: customer should able to renew the same plan again before the 7 days of expiry date. if activew customer selecting the renewal (has 2 days extra in the expiry date for breakfast because of last month paused ) then the amounnt should be adjusted and calculate the amount (subtract the amount) and it should be shown clearly in the invoice.
+Transaction: Clear Transaction details for amount paid with the plan details, Pause transaction details,  
+active customer - renewal then parent subscription id should be mapped.  
+clear audit report for admin.
+signup - Name, Address, Landmark, Phone number, Email are mandatory
+
+Admin: 
+clear analytics dashboard (today how many breakfast, Lunch, Dinner)
+current day delivery details with name , address, phone number, call button. (Breakfast, Lunch, Meal), once order dispatched then mark as delivered or unable to delivered (also should able to change the status if marked as incorrectly) that should be instanstly shown in dashbaord with percentage and count. 
+once the customer signup and opt for the subcription(Breakfast and lunch for monthly) then enquiry should be displayed in the admin portal for approval once admin accepted the subscription then customer should able to pay the amount (This avoid Refund because of the service area and fesability - admin should have the control of service area).
+should able to onboard the customers manually same as signup (for this email verification not required). also add the subscription for them and also should have the controll of pause the meals
+Customer management: able to edit customer details, customer-->subscription-->tranasction details and also the pause transactrion -- >also the linked renewal transaction ..
+Transaction Management: subscription paid transaction details, pause transaction details.
+Able to change the logo and brand name and also the tag line. 
+Able to promote customer to admin
+Price Details set : Breakfast, Lunch, Dinner
